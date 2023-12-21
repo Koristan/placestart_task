@@ -1,0 +1,29 @@
+{% extends 'main/layout.html' %}
+
+{% block content %}
+        <h1>Список задач</h1>
+
+        <div class="tasks">
+            {% for val in data %}
+                <div class="task">
+                    <h2 class="{{val.priority}}">{{ val.task_name }}</h2>
+                    <div class="times-div">
+                        <p>Время создания: {{ val.datetime_start }}</p>
+                        <p>Время дедлайна: {{ val.datetime_deadline }}</p>
+                    </div>
+                    <div class="times-div">
+                        {% if val.priority == "red" %}
+                            <p>Приоритет: Высокий</p>
+                        {% elif val.priority == "yellow" %}
+                            <p>Приоритет: Средний</p>
+                        {% else %}
+                            <p>Приоритет: Низкий</p>
+                        {% endif %}
+                        <p>Статус: {{ val.status }}</p>
+                    </div>
+                    <p class="desc">Описание: {{ val.task_description }}</p>
+                </div>
+            {% endfor %}
+        </div>
+
+{% endblock %}

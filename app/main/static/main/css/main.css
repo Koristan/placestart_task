@@ -1,0 +1,98 @@
+html {
+    margin: 0;
+}
+body {
+    margin: 0
+    background: #737373;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+h2, p {
+    margin: 0;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 6vh;
+    min-height: 50px;
+    width: 100%;
+    background: #575757;
+    border-bottom: solid 3px #4a4a4a;
+}
+
+header h3, a {
+    margin: 0;
+    height: 100%;
+    margin-top: 2vh;
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 6vh;
+    width: 100%;
+    height: auto;
+}
+main h1 {
+    text-align: center;
+}
+
+.red {
+    color: #d41313;
+}
+.yellow {
+    color: #f7df02;
+}
+.green {
+    color: #10c236;
+}
+
+.tasks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+
+.tasks p {
+    margin-top: 10px;
+}
+
+.task {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    width: 70%;
+    max-width: 70%;
+    background: #f0f0f0;
+    border: solid 3px #4a4a4a;
+    border-radius: 5px;
+    text-align: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.times-div {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.desc {
+    text-align: left;
+    flex-wrap: wrap;
+}
